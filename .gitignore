@@ -3,4 +3,3 @@ a.out
 .DS_Store
 
 templates/*
-!templates/tmp
