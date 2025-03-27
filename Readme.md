@@ -60,8 +60,8 @@ qemu-arm -g 1234 ./my_program
 # 1. 같은 컨테이너에 다시 진입
 make run
 
-# 2. GDB 실행
-gdb-multiarch ./my_program
+# 2. GDB 실행(layout 기능을 사용하기 위한 tui 옵션)
+gdb-multiarch -tui ./my_program
 ```
 
 <br>
@@ -76,4 +76,7 @@ gdb-multiarch ./my_program
 | `info registers` | 레지스터 전체 확인 |
 | `x/4xw $sp` | 스택 포인터 기준으로 메모리 확인 |
 | `disassemble` | 어셈블리 코드 보기 |
-
+| `disassemble` | 어셈블리 코드 보기 |
+| `layout src` | 소스 코드 보기 |
+| `layout asm` | 어셈블리 창 보기 |
+| `layout regs` | 레지스터 창 보기 |
